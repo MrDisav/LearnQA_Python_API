@@ -1,1 +1,1 @@
-# LearnQA_Python_API
+#Here we are to study an automation API testing
