@@ -4,7 +4,7 @@ import  requests
 URL = 'https://playground.learnqa.ru/ajax/api/compare_query_type'
 
 
-def any_method(method):
+def any_method(method : str) ->dict :
     params = {
         'method' : method
     }
