@@ -3,3 +3,4 @@
 Logs/
 test_results
 *.log
+__pycache__/

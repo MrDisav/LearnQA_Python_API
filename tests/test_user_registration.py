@@ -68,4 +68,4 @@ class TestUserRegister(BaseCase):
         response = MyRequests.post("/user/", data=data)
         Assertions.assert_code_status(response, 400)
 
-    #test without assertion on keys...
+    #test without assertion on keys.../
