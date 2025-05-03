@@ -1,0 +1,80 @@
+
+-----
+Test: tests/test_auth_user.py::TestUserAuth::test_user_auth (setup)
+Time: 2025-05-02 15:43:29.642154
+Request method: POST
+Request url: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+Test: tests/test_auth_user.py::TestUserAuth::test_negative_auth_check[no_cookie] (setup)
+Time: 2025-05-02 15:43:29.781783
+Request method: POST
+Request url: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+Test: tests/test_auth_user.py::TestUserAuth::test_negative_auth_check[no_token] (setup)
+Time: 2025-05-02 15:43:29.865565
+Request method: POST
+Request url: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+Test: tests/test_user_edit.py::TestUserEdit::test_edit_just_created_user (call)
+Time: 2025-05-02 15:43:29.933932
+Request method: POST
+Request url: https://playground.learnqa.ru/api/user/
+Request data: {'password': '123', 'username': 'testusername', 'firstName': 'testname', 'lastName': 'testlastname', 'email': 'learnqa05022025154329@example.com'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+Test: tests/test_user_get.py::TestUserGet::test_get_user_details_unauthorized (call)
+Time: 2025-05-02 15:43:30.538269
+Request method: GET
+Request url: https://playground.learnqa.ru/api/user/2
+Request data: None
+Request headers: {}
+Request cookies: {}
+
+
+-----
+Test: tests/test_user_get.py::TestUserGet::test_get_user_with_auth_as_same_user (call)
+Time: 2025-05-02 15:43:31.260845
+Request method: POST
+Request url: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_create_user_successful (call)
+Time: 2025-05-02 15:43:31.334146
+Request method: POST
+Request url: https://playground.learnqa.ru/api/user/
+Request data: {'password': '123', 'username': 'testusername', 'firstName': 'testname', 'lastName': 'testlastname', 'email': 'learnqa05022025154331@example.com'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_create_user_with_existing_email (call)
+Time: 2025-05-02 15:43:31.916648
+Request method: POST
+Request url: https://playground.learnqa.ru/api/user/
+Request data: {'password': '123', 'username': 'testusername', 'firstName': 'testname', 'lastName': 'testlastname', 'email': 'vinkotov@example.com'}
+Request headers: {}
+Request cookies: {}
+
