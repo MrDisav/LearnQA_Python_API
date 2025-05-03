@@ -67,3 +67,5 @@ class TestUserRegister(BaseCase):
     def test_user_create_without_any_params(self, data):
         response = MyRequests.post("/user/", data=data)
         Assertions.assert_code_status(response, 400)
+
+    #test without assertion on keys...

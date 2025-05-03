@@ -1,0 +1,80 @@
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_user_create_without_any_params[data0] (call)
+Time: 2025-05-03 16:56:22.426788
+Request method: POST
+Request url: https://playground.learnqa.ru/api_dev/user/
+Request data: {'username': 'testusername', 'firstName': 'testname', 'lastName': 'testlastname', 'email': 'some@example.com'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: The following required params are missed: password
+Response headers: {'Date': 'Sat, 03 May 2025 13:56:24 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '50', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=10', 'Server': 'Apache'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_user_create_without_any_params[data1] (call)
+Time: 2025-05-03 16:56:23.019428
+Request method: POST
+Request url: https://playground.learnqa.ru/api_dev/user/
+Request data: {'password': '123', 'firstName': 'testname', 'lastName': 'testlastname', 'email': 'some@example.com'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: The following required params are missed: username
+Response headers: {'Date': 'Sat, 03 May 2025 13:56:24 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '50', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=10', 'Server': 'Apache'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_user_create_without_any_params[data2] (call)
+Time: 2025-05-03 16:56:23.596595
+Request method: POST
+Request url: https://playground.learnqa.ru/api_dev/user/
+Request data: {'password': '123', 'username': 'testusername', 'lastName': 'testlastname', 'email': 'some@example.com'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: The following required params are missed: firstName
+Response headers: {'Date': 'Sat, 03 May 2025 13:56:25 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '51', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=10', 'Server': 'Apache'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_user_create_without_any_params[data3] (call)
+Time: 2025-05-03 16:56:24.168989
+Request method: POST
+Request url: https://playground.learnqa.ru/api_dev/user/
+Request data: {'password': '123', 'username': 'testusername', 'firstName': 'testname', 'email': 'some@example.com'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: The following required params are missed: lastName
+Response headers: {'Date': 'Sat, 03 May 2025 13:56:25 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '50', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=10', 'Server': 'Apache'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_user_create_without_any_params[data4] (call)
+Time: 2025-05-03 16:56:24.745394
+Request method: POST
+Request url: https://playground.learnqa.ru/api_dev/user/
+Request data: {'password': '123', 'username': 'testusername', 'firstName': 'testname', 'lastName': 'testlastname'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: The following required params are missed: email
+Response headers: {'Date': 'Sat, 03 May 2025 13:56:26 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '47', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=10', 'Server': 'Apache'}
+Response cookies: {}
+
+-----
