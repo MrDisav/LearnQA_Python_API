@@ -22,7 +22,7 @@ class BaseCase:
         return response_as_dict[name]
 
 
-    def prepare_registration_data(self, email = None):
+    def prepare_registration_data(self, email = None, username = 'testusername'):
         if email is None:
             base_part = 'learnqa'
             domain = 'example.com'
@@ -30,7 +30,7 @@ class BaseCase:
             email = f'{base_part}{random_part}@{domain}'
         return {
             'password': '123',
-            'username': 'testusername',
+            'username': username,
             'firstName': 'testname',
             'lastName': 'testlastname',
             'email': email

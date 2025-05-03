@@ -1,0 +1,16 @@
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_incorrect_email_without (call)
+Time: 2025-05-03 12:02:12.826350
+Request method: POST
+Request url: https://playground.learnqa.ru/api_dev/user/
+Request data: {'password': '123', 'username': 'testusername', 'firstName': 'testname', 'lastName': 'testlastname', 'email': 'vinkotovexample.com'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: Invalid email format
+Response headers: {'Date': 'Sat, 03 May 2025 09:02:13 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '20', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=10', 'Server': 'Apache'}
+Response cookies: {}
+
+-----

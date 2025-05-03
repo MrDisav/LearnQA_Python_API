@@ -1,0 +1,16 @@
+
+-----
+Test: tests/test_user_registration.py::TestUserRegister::test_user_short_name (call)
+Time: 2025-05-03 12:08:23.416846
+Request method: POST
+Request url: https://playground.learnqa.ru/api_dev/user/
+Request data: {'password': '123', 'username': 'testusername', 'firstName': 'testname', 'lastName': 'testlastname', 'email': 's'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: The value of 'email' field is too short
+Response headers: {'Date': 'Sat, 03 May 2025 09:08:25 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '39', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=10', 'Server': 'Apache'}
+Response cookies: {}
+
+-----
