@@ -26,7 +26,7 @@ class BaseCase:
         if email is None:
             base_part = 'learnqa'
             domain = 'example.com'
-            random_part = datetime.now().strftime('%m%d%Y%H%M%S')
+            random_part = datetime.now().strftime('_%m_%d_%Y_%H_%M_%S') + f'{datetime.now().microsecond // 1000:03d}'
             email = f'{base_part}{random_part}@{domain}'
         return {
             'password': '123',
