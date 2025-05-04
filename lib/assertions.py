@@ -35,7 +35,7 @@ class Assertions:
         except json.JSONDecodeError:
             assert False, f'Not a JSON. Response text is {response.text}'
         for every_elem in name:
-            assert every_elem not in response_as_dict, f'Response JSON have a key {name}'
+            assert every_elem not in response_as_dict, f'Response JSON have a key {every_elem}'
 
 
     @staticmethod
