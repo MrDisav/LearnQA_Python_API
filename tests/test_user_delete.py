@@ -84,7 +84,12 @@ class TestUserDelete(BaseCase):
         response_2 = MyRequests.delete(f"/user/{user_id}",
                                        headers={"x-csrf-token": token},
                                        cookies={"auth_sid": auth_sid})
-        Assertions.assert_code_status(response_2, 200)
+        Assertions.assert_code_status(response_2, 400)
+        Assertions.assert_json_has_key(response_2, 'error')
+        Assertions.assert_json_value_by_name(response_2,
+                                             'error',
+                                             'This user can only delete their own account.',
+                                             'User is deleted')
 
         # GET USER`S DELETE DATA
         response_3 = MyRequests.get(f"/user/{user_id}")
