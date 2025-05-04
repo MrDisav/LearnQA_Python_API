@@ -46,3 +46,12 @@ class Assertions:
             assert False, f'Not a JSON. Response text is {response.text}'
         for every_elem in name:
             assert every_elem in response_as_dict, f'Response JSON doesn`t have a key {every_elem}'
+
+
+    @staticmethod
+    def response_has_text(response: Response, text: str):
+        try:
+            response_text = response.text
+        except Exception:
+            raise ValueError('There is no text in response')
+        assert response_text == text, f'Response text is - {response_text}, Expect - {text}'
