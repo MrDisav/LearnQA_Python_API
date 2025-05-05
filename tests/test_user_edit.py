@@ -120,6 +120,12 @@ class TestUserEdit(BaseCase):
             cookies={"auth_sid": auth_sid},
             data={"firstName": new_name}
         )
+        Assertions.assert_code_status(response_3, 400)
+        Assertions.assert_json_has_key(response_3, 'error')
+        Assertions.assert_json_value_by_name(response_3,
+                                             'error',
+                                             'This user can only edit their own data.',
+                                             'user was changed')
 
         #LOGIN TO ASSERT CHANGES
         login_data = {
