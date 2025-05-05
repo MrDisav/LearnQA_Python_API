@@ -23,6 +23,7 @@ class TestUserAuth(BaseCase):
         self.x_csrf_token = self.get_header(response, 'x-csrf-token')
         self.user_id = self.get_json_value(response, 'user_id')
 
+    @allure.tag("smoke")
     @allure.description('This test successfully authorized user by email and password')
     def test_user_auth(self):
         response = MyRequests.get(

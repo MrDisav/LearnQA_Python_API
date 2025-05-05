@@ -3,9 +3,12 @@ from lib.BaseCase import BaseCase
 from lib.assertions import Assertions
 from lib.my_requests import MyRequests
 import pytest
+import allure
+
 
 
 class TestUserRegister(BaseCase):
+    @allure.tag("smoke")
     def test_create_user_successful(self):
         data = self.prepare_registration_data()
 

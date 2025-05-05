@@ -1,10 +1,12 @@
 from lib.assertions import Assertions
 from lib.BaseCase import BaseCase
 from lib.my_requests import MyRequests
+import allure
 
 
 class TestUserEdit(BaseCase):
     #REGISTRATION
+    @allure.tag("smoke")
     def test_edit_just_created_user(self):
         reg_data = self.prepare_registration_data()
         response = MyRequests.post("/user/", data=reg_data)

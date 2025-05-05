@@ -1,6 +1,8 @@
 from lib.BaseCase import BaseCase
 from lib.assertions import Assertions
 from lib.my_requests import MyRequests
+import allure
+
 
 class TestUserDelete(BaseCase):
 
@@ -26,7 +28,7 @@ class TestUserDelete(BaseCase):
                                              'Please, do not delete test users with ID 1, 2, 3, 4 or 5.',
                                              'User is deleted!')
 
-
+    @allure.tag("smoke")
     def test_delete_created_user(self):
         # REGISTRATION
         reg_data = self.prepare_registration_data()

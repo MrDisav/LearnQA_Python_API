@@ -1,10 +1,12 @@
 from lib.BaseCase import BaseCase
 from lib.assertions import Assertions
 from lib.my_requests import MyRequests
+import allure
 
 
 
 class TestUserGet(BaseCase):
+    @allure.tag("smoke")
     def test_get_user_details_unauthorized(self):
         names = ['email, firstname', 'lastName']
 
